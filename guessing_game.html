@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acerte o Número</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Gheizla Santos">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./gg_icon.png">
+</head>
+
+<body>
+    <div id="divInformativa">
+        <h2>Acerte o Número</h2>
+        <h3>Tente acertar o número de 1 a 100</h3>
+		   <h3><span id="divinforTentativa">Você tem 10 tentativas</span></h3>
+    </div>
+
+    <div id="game">
+        <span id="turnoIndicador"></span>
+        <div id="divjogador1Display">
+            <p><span id="jogador1NomeDisplay"></span>: <span id="jogador1Score">0</span></p>
+        </div>
+        <div id="divjogador2Display">
+            <p><span id="jogador2NomeDisplay"></span>: <span id="jogador2Score">0</span></p>
+        </div>
+        <input type="number" id="palpiteInput" style="width: 60px;">
+
+        <button id="palpiteButton" class="btnPalpite"><img src="./palpite_icon.png" 
+        alt="Palpite" height="60" width="60"/>
+		<br><b>Palpite</b><br></button>
+        <div class="limpa"></div>
+
+        <div id="divbordaPiscante" style="display: none;">
+            <span id="resultText"></span>
+        </div>
+
+        <div class="limpa"></div>
+
+        <a href="index.html"><button id="backButton" class="btnBack"><img src="./voltar_icon.png" 
+        alt="Voltar" height="60" width="60"/>
+      <br><b>Voltar</b><br></button></a>
+    </div>
+    <script src="./game.js"></script>
+</body>
+
+</html>

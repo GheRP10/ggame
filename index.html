@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acerte o Número</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Gheizla Santos">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./gg_icon.png">
+</head>
+
+<body>
+    <h1>Acerte o Número</h1>
+    <h2>Configurações do Jogo</h2>
+    <div id="setup">
+        <label for="numJogadores">Número de Jogadores:</label>
+        <div id="rbl">
+            <input type="radio" id="rbl1" name="numJogadores" value="1" checked>
+            <label for="rbl1">1</label>
+            <input type="radio" id="rbl2" name="numJogadores" value="2">
+            <label for="rbl2">2</label>
+        </div>
+        <div id="jogadorNomes">
+            <div id="divjogador1">
+                <label id="lbljogador1" for="jogador1Nome">Nome do Jogador 1:</label>
+                <input type="text" id="jogador1Nome" style="width: 100px;">
+                <br>
+            </div>
+            <div id="divjogador2" style="display: none;">
+                <label id="lbljogador2" for="jogador2Nome">Nome do Jogador 2:</label>
+                <input type="text" id="jogador2Nome" style="width: 100px;">
+            </div>
+        </div>
+
+        <br>
+        <button id="startButton" class="btnPlay"><img src="./play_icon.png" 
+        alt="Comecar Jogo" height="60" width="60"/>
+        <br><b>Começar Jogo</b><br></button>
+    </div>
+    <script src="./setup.js"></script>
+</body>
+
+</html>
